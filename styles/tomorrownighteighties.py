@@ -36,9 +36,6 @@ class TomorrownighteightiesStyle(Style):
     background_color = BACKGROUND
     highlight_color = SELECTION
 
-    background_color = BACKGROUND
-    highlight_color = SELECTION
-
     styles = {
         # No corresponding class for the following:
         Text:                      FOREGROUND,  # class:  ''
@@ -46,21 +43,21 @@ class TomorrownighteightiesStyle(Style):
         Error:                     RED,         # class: 'err'
         Other:                     "",          # class 'x'
 
-        Comment:                   COMMENT,   # class: 'c'
-        Comment.Multiline:         "",        # class: 'cm'
-        Comment.Preproc:           "",        # class: 'cp'
-        Comment.Single:            "",        # class: 'c1'
-        Comment.Special:           "",        # class: 'cs'
+        Comment:                   AQUA,      # class: 'c'
+        Comment.Multiline:         COMMENT,   # class: 'cm'
+        Comment.Preproc:           PURPLE,    # class: 'cp'
+        Comment.Single:            "italic " + COMMENT,   # class: 'c1'
+        Comment.Special:           COMMENT,   # class: 'cs'
 
-        Keyword:                   PURPLE,    # class: 'k'
-        Keyword.Constant:          "",        # class: 'kc'
-        Keyword.Declaration:       "",        # class: 'kd'
+        Keyword:                   GREEN,      # class: 'k'
+        Keyword.Constant:          GREEN,        # class: 'kc'
+        Keyword.Declaration:       YELLOW,    # class: 'kd'
         Keyword.Namespace:         AQUA,      # class: 'kn'
-        Keyword.Pseudo:            "",        # class: 'kp'
-        Keyword.Reserved:          "",        # class: 'kr'
-        Keyword.Type:              YELLOW,    # class: 'kt'
+        Keyword.Pseudo:            GREEN,        # class: 'kp'
+        Keyword.Reserved:          GREEN,        # class: 'kr'
+        Keyword.Type:              BLUE,      # class: 'kt'
 
-        Operator:                  AQUA,      # class: 'o'
+        Operator:                  FOREGROUND,      # class: 'o'
         Operator.Word:             "",        # class: 'ow' - like keywords
 
         Punctuation:               FOREGROUND,  # class: 'p'
@@ -69,23 +66,23 @@ class TomorrownighteightiesStyle(Style):
         Name.Attribute:            BLUE,        # class: 'na' - to be revised
         Name.Builtin:              "",          # class: 'nb'
         Name.Builtin.Pseudo:       "",          # class: 'bp'
-        Name.Class:                YELLOW,      # class: 'nc' - to be revised
+        Name.Class:                BLUE,      # class: 'nc' - to be revised
         Name.Constant:             RED,         # class: 'no' - to be revised
         Name.Decorator:            AQUA,        # class: 'nd' - to be revised
-        Name.Entity:               "",          # class: 'ni'
+        Name.Entity:               YELLOW,          # class: 'ni'
         Name.Exception:            RED,         # class: 'ne'
-        Name.Function:             BLUE,        # class: 'nf'
+        Name.Function:             ORANGE,        # class: 'nf'
         Name.Property:             "",          # class: 'py'
         Name.Label:                "",          # class: 'nl'
         Name.Namespace:            YELLOW,      # class: 'nn' - to be revised
         Name.Other:                BLUE,        # class: 'nx'
         Name.Tag:                  AQUA,        # class: 'nt' - like a keyword
         Name.Variable:             RED,         # class: 'nv' - to be revised
-        Name.Variable.Class:       "",          # class: 'vc' - to be revised
-        Name.Variable.Global:      "",          # class: 'vg' - to be revised
-        Name.Variable.Instance:    "",          # class: 'vi' - to be revised
+        Name.Variable.Class:       YELLOW,          # class: 'vc' - to be revised
+        Name.Variable.Global:      YELLOW,          # class: 'vg' - to be revised
+        Name.Variable.Instance:    YELLOW,          # class: 'vi' - to be revised
 
-        Number:                    ORANGE,    # class: 'm'
+        Number:                    BLUE,    # class: 'm'
         Number.Float:              "",        # class: 'mf'
         Number.Hex:                "",        # class: 'mh'
         Number.Integer:            "",        # class: 'mi'
@@ -95,7 +92,7 @@ class TomorrownighteightiesStyle(Style):
         Literal:                   ORANGE,    # class: 'l'
         Literal.Date:              GREEN,     # class: 'ld'
 
-        String:                    GREEN,       # class: 's'
+        String:                    AQUA,       # class: 's'
         String.Backtick:           "",          # class: 'sb'
         String.Char:               FOREGROUND,  # class: 'sc'
         String.Doc:                COMMENT,     # class: 'sd' - like a comment
@@ -108,7 +105,7 @@ class TomorrownighteightiesStyle(Style):
         String.Single:             "",          # class: 's1'
         String.Symbol:             "",          # class: 'ss'
 
-        Generic:                   "",                    # class: 'g'
+        Generic:                   GREEN,                    # class: 'g'
         Generic.Deleted:           RED,                   # class: 'gd',
         Generic.Emph:              "italic",              # class: 'ge'
         Generic.Error:             "",                    # class: 'gr'
